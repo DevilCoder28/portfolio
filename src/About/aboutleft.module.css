@@ -1,0 +1,87 @@
+.name{
+    font-size: 50px;
+    font-family: "Google Sans Bold";
+}
+
+.about{
+        font-size: 20px;
+    line-height: 40px;
+    margin-right: 40px;
+    font-weight: 500;
+    font-family: Google Sans Medium;
+    color: rgb(123, 146, 191);
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: flex-start; /* or center/right if needed */
+}
+
+.icon {
+  color: #ffffff;
+  font-size: 28px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Specific colors for each social platform on hover */
+.icon:nth-child(1):hover {
+  background-color: #333; /* GitHub */
+}
+
+.icon:nth-child(2):hover {
+  background-color: #0077b5; /* LinkedIn */
+}
+
+.icon:nth-child(3):hover {
+  background-color: #e4405f; /* Instagram */
+}
+
+/* Optional: Blinking cursor */
+.cursor {
+  font-weight: bold;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.star{
+
+    margin-top: 30px;
+
+
+}
+
+.buttom{
+    background-color: #001C55;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 2px gray;
+}
+.star a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.buttom:active {
+  transform: translate(3px, 2px);
+}

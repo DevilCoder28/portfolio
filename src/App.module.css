@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.Do{
+    font-size: 3rem;
+    color: rgb(2, 2, 88);
+}

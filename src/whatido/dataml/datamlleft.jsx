@@ -3,7 +3,7 @@ import styles from "./datamlleft.module.css";
 function DataMlLeft() {
   return (
     <div
-      className="react-reveal skills-image-div"
+      className={`react-reveal skills-image-div ${styles.leftHalfOnly}`}
       style={{
         animationFillMode: "both",
         animationDuration: "2000ms",

@@ -1,7 +1,0 @@
-.leftHalfOnly {
-  width: 45vw;             /* Takes up 50% of the screen width */
-  height: 100vh;           /* Full screen height */
-  display: flex;
-  /* padding: 1rem; */
-
-}

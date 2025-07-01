@@ -1,0 +1,42 @@
+.main_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 3rem;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #f8f9fa; /* Light background */
+}
+
+.left_side {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  /* You can add image or SVG here */
+}
+
+.right_side {
+  width: 55%;
+  
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main_container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .left_side,
+  .right_side {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .right_side {
+    margin-top: 2rem;
+  }
+}

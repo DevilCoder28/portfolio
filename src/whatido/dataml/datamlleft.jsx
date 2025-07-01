@@ -3,8 +3,8 @@ function DataMlLeft({ checkcolor }) {
     <div style={{ width: "60%", color: checkcolor }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="600.729"
-        height="636.017"
+        width="100%"
+        height="auto"
         viewBox="0 0 800.729 636.017"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         role="img"

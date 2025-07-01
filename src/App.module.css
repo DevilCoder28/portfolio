@@ -4,6 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: #EDF9FE;
+  overflow: hidden;
 }
 .Do{
     font-size: 3rem;

@@ -1,0 +1,55 @@
+.main_container{
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+.left_side{
+    width: 50%;
+}
+
+.right_side{
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 1024px){
+    @media screen and (max-width: 1024px) {
+  .main_container {
+    flex-direction: column;
+  }
+
+  .left_side,
+  .right_side {
+    width: 100%;
+    height: auto;
+  }
+  
+
+  
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .role {
+    font-size: 1.6rem;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .typing {
+    font-size: 1.4rem;
+  }
+
+  .about {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+}
+
+}

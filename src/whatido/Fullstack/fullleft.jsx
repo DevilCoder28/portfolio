@@ -3,8 +3,8 @@ function Fullleft({ checkcolor }) {
     <div style={{ width: "60%", color: checkcolor }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="610.81982"
-        height="489.57062"
+        width="100%"
+        height="auto"
         viewBox="0 0 610.81982 489.57062"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         role="img"

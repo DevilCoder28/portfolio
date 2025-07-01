@@ -3,7 +3,7 @@ import styles from "./about.module.css";
 import AboutLeft from "./aboutleft";
 import AboutRight from "./aboutright";
 
-function About() {
+function About({ checkcolor }) {
   return (
     <div className={styles["main-container"]}>
       {/* Color Selector Buttons */}
@@ -13,7 +13,7 @@ function About() {
       </div>
 
       <div className={styles.right_side}>
-        <AboutRight />
+        <AboutRight checkcolor={checkcolor} />
       </div>
     </div>
   );

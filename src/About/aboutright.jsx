@@ -1,29 +1,9 @@
 import styles from "./aboutright.module.css";
 import { useState } from "react";
 
-function AboutRight() {
-  const [currentColor, setSelectedColor] = useState("#0E6BA8"); // default color
-
-  const colorOptions = [
-    "#1E90FF", // Dodger Blue – vibrant and energetic
-    "#FF6F61", // Coral Red – soft yet striking
-    "#6A5ACD", // Slate Blue – deep and professional
-    "#00BFA6", // Teal Green – fresh and modern
-    "#FFC107", // Amber – warm and attention-grabbing
-  ];
-  // 5 colors
+function AboutRight({ checkcolor }) {
   return (
-    <div className={styles.image} style={{ color: currentColor }}>
-      <div className={styles.color_picker}>
-        {colorOptions.map((color, index) => (
-          <button
-            key={index}
-            className={styles.color_button}
-            style={{ backgroundColor: color }}
-            onClick={() => setSelectedColor(color)}
-          ></button>
-        ))}
-      </div>
+    <div className={styles.image} style={{ color: { checkcolor } }}>
       <svg
         id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd"
         data-name="Layer 1"
@@ -59,40 +39,40 @@ function AboutRight() {
         ></polygon>
         <polygon
           points="142.635 426.883 113.035 426.883 100.702 418.25 156.201 418.25 142.635 426.883"
-          fill="currentColor"
+          fill={checkcolor}
         ></polygon>
         <polygon
           points="142.635 462.649 113.035 462.649 100.702 454.016 156.201 454.016 142.635 462.649"
-          fill="currentColor"
+          fill={checkcolor}
         ></polygon>
         <polygon
           points="142.635 513.215 113.035 513.215 100.702 504.581 156.201 504.581 142.635 513.215"
-          fill="currentColor"
+          fill={checkcolor}
         ></polygon>
         <polygon
           points="142.635 563.78 113.035 563.78 100.702 555.147 156.201 555.147 142.635 563.78"
-          fill="currentColor"
+          fill={checkcolor}
         ></polygon>
         <polygon
           points="595.257 431.816 624.857 431.816 637.19 423.183 581.691 423.183 595.257 431.816"
-          fill="currentColor"
+          fill={checkcolor}
         ></polygon>
         <polygon
           points="595.257 467.582 624.857 467.582 637.19 458.949 581.691 458.949 595.257 467.582"
-          fill="currentColor"
+          fill={checkcolor}
         ></polygon>
         <polygon
           points="595.257 518.148 624.857 518.148 637.19 509.515 581.691 509.515 595.257 518.148"
-          fill="currentColor"
+          fill={checkcolor}
         ></polygon>
         <polygon
           points="595.257 568.713 624.857 568.713 637.19 560.08 581.691 560.08 595.257 568.713"
-          fill="currentColor"
+          fill={checkcolor}
         ></polygon>
         <path
           d="M859.81989,235.61493H610.63446a9.4227,9.4227,0,0,0-9.42389,9.42389V412.89655a9.4227,9.4227,0,0,0,9.42389,9.42388h94.5929l-3.54389,22.62623s-20.25281,10.75927-6.01251,11.07574,81.32764,0,81.32764,0,12.97448,0-7.59479-11.39221l-3.33362-22.30976h93.7497a9.42266,9.42266,0,0,0,9.42388-9.42388V245.03882A9.42266,9.42266,0,0,0,859.81989,235.61493Z"
           transform="translate(-244.40605 -115.15866)"
-          fill="currentColor"
+          fill={checkcolor}
         ></path>
         <rect
           x="365.82336"
@@ -115,12 +95,12 @@ function AboutRight() {
         ></circle>
         <polygon
           points="481.452 357.952 481.452 361.117 311.202 361.117 311.202 358.585 311.436 357.952 315.632 346.56 477.971 346.56 481.452 357.952"
-          fill="currentColor"
+          fill={checkcolor}
         ></polygon>
         <path
           d="M791.37558,470.01266c-.31011,1.3259-1.481,2.72467-4.1265,4.04741-9.4935,4.74675-28.797-1.2658-28.797-1.2658s-14.87315-2.53161-14.87315-9.17706a11.86592,11.86592,0,0,1,1.30377-.77528c3.99133-2.11163,17.2253-7.32222,40.69051.22062a9.78618,9.78618,0,0,1,4.46035,2.923A4.667,4.667,0,0,1,791.37558,470.01266Z"
           transform="translate(-244.40605 -115.15866)"
-          fill="currentColor"
+          fill={checkcolor}
         ></path>
         <path
           d="M791.37558,470.01266c-11.62,4.45247-21.97744,4.78472-32.607-2.59805a23.34328,23.34328,0,0,0-13.88583-4.57268c3.99133-2.11163,17.2253-7.32222,40.69051.22062a9.78618,9.78618,0,0,1,4.46035,2.923A4.667,4.667,0,0,1,791.37558,470.01266Z"
@@ -175,7 +155,7 @@ function AboutRight() {
         <path
           d="M307.55,235.53374s56.40567,11.51136,70.21931-6.90682,19.56931,51.80113,19.56931,51.80113l6.90682,73.67272-10.36023,40.28977s-54.1034,43.74318-71.37044,47.19658-43.74318,5.75569-43.74318,5.75569,8.058-127.77613,8.058-130.0784S307.55,235.53374,307.55,235.53374Z"
           transform="translate(-244.40605 -115.15866)"
-          fill="currentColor"
+          fill={checkcolor}
         ></path>
         <path
           d="M324.70433,213.94456s-12.54979-7.18923-16.0032-.28241S273.01591,237.836,269.5625,237.836s6.90682,95.54431,2.30227,107.05567S245.38864,440.436,258.05114,447.34281s3.45341-6.90682,16.11591,10.36022,74.82385,17.267,78.27726,10.36023-27.62727-58.708-21.87159-107.05567,14.96477-115.11362,6.90682-124.32271S324.70433,213.94456,324.70433,213.94456Z"
@@ -225,7 +205,7 @@ function AboutRight() {
             y="176.36275"
             width="29.75235"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="b9a0b375-cc2a-4c59-8850-661af54e4f62"
@@ -234,7 +214,7 @@ function AboutRight() {
             y="176.36275"
             width="10.46842"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="e174c2ab-9bc5-41ec-b37c-b06fbf8a9878"
@@ -243,7 +223,7 @@ function AboutRight() {
             y="176.36275"
             width="10.46842"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="ba2479ac-4c7d-43b4-a028-73b1e20e4002"
@@ -252,7 +232,7 @@ function AboutRight() {
             y="176.36275"
             width="71.07506"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="ac60ef86-00f2-480b-8171-28b6fdfc1958"
@@ -261,7 +241,7 @@ function AboutRight() {
             y="222.6442"
             width="29.75235"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="b3d8298d-cd65-487a-8b19-4cee946356e7"
@@ -270,7 +250,7 @@ function AboutRight() {
             y="222.6442"
             width="10.46842"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="ed27f15f-f0c4-4569-8330-a6688f8e356c"
@@ -279,7 +259,7 @@ function AboutRight() {
             y="222.6442"
             width="10.46842"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="f685c005-adaf-4d60-acda-005b037d82a6"
@@ -288,7 +268,7 @@ function AboutRight() {
             y="222.6442"
             width="71.07506"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="eca7c7fc-83f8-48ca-a588-6606db47af3f"
@@ -297,7 +277,7 @@ function AboutRight() {
             y="192.34088"
             width="29.75235"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="a71b5b2f-f8b9-481d-a301-5e3357e5fe42"
@@ -306,7 +286,7 @@ function AboutRight() {
             y="192.34088"
             width="29.75235"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="abb3a25a-f854-41fc-8391-e6ad9fbe2417"
@@ -315,7 +295,7 @@ function AboutRight() {
             y="192.34088"
             width="10.46842"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="add2b425-b775-4eb5-9c25-8c4c14f957c9"
@@ -324,7 +304,7 @@ function AboutRight() {
             y="192.34088"
             width="10.46842"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="b7159612-3b84-4b0b-a885-612eaab04c06"
@@ -333,7 +313,7 @@ function AboutRight() {
             y="192.34088"
             width="71.07506"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="edfc7301-4de5-47dc-80e2-1ae2da982d6d"
@@ -342,7 +322,7 @@ function AboutRight() {
             y="207.76802"
             width="29.75235"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="e1009f91-6275-4375-80fa-0d778e331fdc"
@@ -351,7 +331,7 @@ function AboutRight() {
             y="207.76802"
             width="29.75235"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="a060fb9f-1f1a-4862-9a69-16dd49199e18"
@@ -360,7 +340,7 @@ function AboutRight() {
             y="207.76802"
             width="10.46842"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="b6754d5f-104f-449c-b9a9-cf9ac82bf5fe"
@@ -369,7 +349,7 @@ function AboutRight() {
             y="207.76802"
             width="10.46842"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
           <rect
             id="e6ed1ccd-2cfd-450f-a339-07df3a1ee6bb"
@@ -378,7 +358,7 @@ function AboutRight() {
             y="207.76802"
             width="71.07506"
             height="7.1626"
-            fill="currentColor"
+            fill={checkcolor}
           ></rect>
         </g>
       </svg>

@@ -1,6 +1,6 @@
 import styles from "./navbar.module.css";
 
-function Navbar() {
+function Navbar({ checkcolor }) {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
@@ -8,21 +8,17 @@ function Navbar() {
       </div>
 
       <div className={styles.link}>
-        <a href="#about" className={styles.tag}>
-          About <span className={styles.highlight}></span>
-        </a>
-        <a href="#education" className={styles.tag}>
-          Education <span className={styles.highlight}></span>
-        </a>
-        <a href="#projects" className={styles.tag}>
-          Projects <span className={styles.highlight}></span>
-        </a>
-        <a href="#skills" className={styles.tag}>
-          Skills <span className={styles.highlight}></span>
-        </a>
-        <a href="#contact" className={styles.tag}>
-          Contact <span className={styles.highlight}></span>
-        </a>
+        {["about", "education", "projects", "skills", "contact"].map(
+          (section) => (
+            <a key={section} href={`#${section}`} className={styles.tag}>
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+              <span
+                className={styles.highlight}
+                style={{ backgroundColor: checkcolor }}
+              ></span>
+            </a>
+          )
+        )}
       </div>
     </nav>
   );

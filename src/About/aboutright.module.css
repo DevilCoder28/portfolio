@@ -4,39 +4,3 @@
   align-items: center;
   width: 100%;
 }
-.color_picker {
-  display: flex;
-  position: absolute;
-  gap: 12px;
-  margin-bottom: 80vh;
-  margin-left: 10vw;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-.color_button {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-  outline: none;
-}
-
-.color_button:hover {
-  transform: scale(1.15);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-}
-
-.color_button:focus {
-  border: 2px solid #333;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-
-@media screen and (max-width: 1024px){
-  .color_picker{
-    display: none;
-  }
-}

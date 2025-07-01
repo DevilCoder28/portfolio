@@ -4,7 +4,7 @@ function Navbar({ checkcolor }) {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <h1>Ayush Kumar</h1>
+        <h1 style={{ color: checkcolor }}>𝒜𝓎𝓊𝓈𝒽 𝒦𝓊𝓂𝒶𝓇</h1>
       </div>
 
       <div className={styles.link}>

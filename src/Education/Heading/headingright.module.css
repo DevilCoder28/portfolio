@@ -17,32 +17,68 @@
   transform: scale(1.1);
 }
 
-
-.edu{
-    font-size: 3.6rem;
+.edu {
+  font-size: 3.6rem;
+  text-align: center;
 }
 
-.right_side{
+.right_side {
+  position: relative;
+  margin-top: 20%;
+  margin-right: 20%; /* Replaces top: 10% */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.para {
+  font-size: 1.6rem;
+  margin-bottom: 30px; /* Replaces bottom: 10% */
+  text-align: center;
+}
+
+/* ✅ Tablet & below */
+@media screen and (max-width: 1024px) {
+  .iconRow {
+    gap: 20px;
     position: relative;
-    top: 10%;
-    /* background-color: red; */
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    right: 10%
+  }
 
-.para{
-    font-size: 1.6rem;
+  .icon {
+    width: 40px;
+  }
+
+  .edu {
+    font-size: 2.4rem;
     position: relative;
-    bottom: 10%;
+    right: 10%
+  }
+  .right_side{
+    position: relative;
+    left: 10%;
+  }
+
+  .para {
+    font-size: 1.2rem;
+    padding: 0 10px;
+    position: relative;
+    right: 10%
+  }
 }
 
-@media screen and (max-width: 1024px){
-    .iconRow{
-      gap: 20px;
-    }
-    .icon{
-      width: 40px;
-    }
+/* ✅ Extra mobile tweaks */
+@media screen and (max-width: 600px) {
+  .icon {
+    width: 32px;
+  }
+
+  .edu {
+    font-size: 2rem;
+  }
+
+  .para {
+    font-size: 1rem;
+  }
 }

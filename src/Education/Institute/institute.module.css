@@ -1,42 +1,48 @@
 .main_container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 2rem 3rem;
-  width: 100%;
-  min-height: 100vh;
-  box-sizing: border-box;
-  background-color: #f8f9fa; /* Light background */
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
 
+/* Left-Right Content Block */
+.block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left side content */
 .left_side {
-  width: 45%;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  /* You can add image or SVG here */
 }
 
+/* Right side content */
 .right_side {
-  width: 55%;
-  
+  flex: 3;
 }
 
-/* Responsive */
+/* 📱 Mobile Responsive Styles */
 @media (max-width: 768px) {
-  .main_container {
+  .block {
     flex-direction: column;
-    padding: 1rem;
+    align-items: stretch;
   }
 
   .left_side,
   .right_side {
+    flex: unset;
     width: 100%;
-    padding: 1rem;
+    justify-content: center;
   }
 
-  .right_side {
-    margin-top: 2rem;
+  .main_container {
+    padding: 1rem;
+    gap: 1.5rem;
   }
 }

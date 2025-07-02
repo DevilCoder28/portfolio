@@ -1,6 +1,6 @@
 /* Existing styles (unchanged) */
 .navbar {
-  width: 97%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

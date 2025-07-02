@@ -2,6 +2,9 @@
     font-size: 3rem;
     color: rgb(2, 2, 88);
 }
+.root{
+    padding: 0px 70px;
+}
 
 @media screen and (max-width: 1024px){
     

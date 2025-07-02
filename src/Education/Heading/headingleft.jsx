@@ -7,7 +7,7 @@ function Headingleft({ checkcolor }) {
         id="eb113788-f1f1-4c1f-be62-f1d0ea2e1eb6"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
-        width="100%"
+        width="auto"
         height="auto"
         viewBox="0 0 795.39431 574.03802"
       >

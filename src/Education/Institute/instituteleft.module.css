@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* fills parent height */
+  width: 100%;
+  /* background-color: red; */
+  padding: 1rem;
+}
+
+.logoimage {
+  max-width: 100%;
+  text-align: center;
+  border-radius: 50%;
+  
+}
+
+.logoimage img {
+  width: 100%;           /* adjust size as needed */
+  height: auto;
+  border-radius: 50%;    /* smooth corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.logoimage img:hover {
+  transform: scale(1.05); /* subtle zoom on hover */
+}

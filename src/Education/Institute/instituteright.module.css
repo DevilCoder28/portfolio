@@ -1,65 +1,97 @@
-.container{
-    max-width: 100%;
-    border-radius: 7px 7px 7px 7px;
-    border: 1px solid black;
-    box-shadow: 2px 3px 2px black;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-
+.container {
+  max-width: 100%;
+  border-radius: 7px;
+  border: 1px solid black;
+  box-shadow: 2px 3px 2px black;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  overflow: hidden;
 }
 
-.name{
-    background-color: #85B7D5;
-    /* flex-direction: column; */
-    height: 13vh;
-    max-height: auto;
-    gap: 1px;
-    border-radius: 7px 7px 0 0;
-    padding: 10px;
-}
-.year{
-    display: flex;
-    justify-content: space-between;
+.name {
+  background-color: #85B7D5;
+  height: auto;
+  gap: 1px;
+  border-radius: 7px 7px 0 0;
+  padding: 10px;
 }
 
-.year h3{
-    font-size: 23px;
-    font-weight: 600;
+.year {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.year p{
-    font-size: 16px;
-    font-weight: 400;
+.year h3 {
+  font-size: 23px;
+  font-weight: 600;
 }
 
-.course{
-    font-size: 18px;
-    font-weight: 300;
+.year p {
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.point{
-    display: flex;
+.course {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.point {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* 📱 Responsive & fluid web link box */
+.web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: fit-content;
+  background-color: #85B7D5;
+  margin: 10px auto 0 auto;
+}
+
+.web a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+/* ✅ Tablet & Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .year {
     flex-direction: column;
-    padding: 10px;
-}
+    gap: 5px;
+  }
 
-.web{
-    position: relative;
-    left: 75%;
-    display: flex;
-    padding: 10px 20px;
-    /* border: 1px solid black; */
-    border-radius: 12px;
-    width: 15%;
+  .year h3 {
+    font-size: 20px;
+  }
+
+  .year p {
+    font-size: 14px;
+  }
+
+  .course {
+    font-size: 16px;
+  }
+
+  .web {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
     justify-content: center;
-    align-items: center;    
-    background-color: #85B7D5;
-    
-    
-}
+  }
 
-.web a{
-    text-decoration: none;
-    font-weight: 600;
-    color: black;
+  .web a {
+    font-size: 14px;
+  }
+
+  .container {
+    padding-bottom: 15px;
+  }
 }

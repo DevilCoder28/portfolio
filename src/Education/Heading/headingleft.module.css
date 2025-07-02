@@ -1,0 +1,10 @@
+.heading-img-div{
+    margin-right: 10%;
+}
+
+@media screen and (max-width: 1024px){
+    .heading-img-div{
+        position: relative;
+        right: 20%
+    }
+}
